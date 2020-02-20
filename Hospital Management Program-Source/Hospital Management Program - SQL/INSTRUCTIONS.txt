@@ -1,0 +1,8 @@
+1. To run the application make sure that the database is created on the same machine as the application is being run.
+2. The name of the database is Hospital.
+3. The folder "Create Tables" contains SQL create statments which are to be run in order to create the tables in the database before running the application.
+4. The SQL insert Statements in the folder "Test Data" may be used to create temporary fields in the database.
+5. Run the executable Hospital.exe and verify the working.
+6. The login creds are "apollo" and "apollo".
+
+WinSys Software Solutions

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.AdminaccountController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="30.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back" />
+                  <Button fx:id="addnewbutton" mnemonicParsing="false" onAction="#addnew" text="Add New" />
+                  <Button fx:id="updatebutton" mnemonicParsing="false" onAction="#update" text="Update Info" />
+                  <Button fx:id="deletebutton" mnemonicParsing="false" onAction="#delete" text="Delete" />
+                  <Label />
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search" />
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="tab1" layoutY="35.0" onMouseClicked="#showonclick" prefHeight="745.0" prefWidth="486.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="102.0" text="Em_Id" />
+                <TableColumn fx:id="c2" prefWidth="154.0" text="First_name" />
+                  <TableColumn fx:id="c3" prefWidth="229.0" text="Last_name" />
+              </columns>
+            </TableView>
+            <TextField fx:id="t1" layoutX="1182.0" layoutY="65.0" promptText="Employee id" />
+            <TextField fx:id="t2" layoutX="1182.0" layoutY="120.0" promptText="First name" />
+            <TextField fx:id="t3" layoutX="1182.0" layoutY="172.0" promptText="Last name" />
+            <TextField fx:id="t4" layoutX="1182.0" layoutY="224.0" promptText="Designamtion" />
+            <TextField fx:id="t5" layoutX="1182.0" layoutY="269.0" promptText="Date of Birth" />
+            <TextField fx:id="t6" layoutX="1182.0" layoutY="312.0" promptText="Joining Date" />
+            <TextField fx:id="t7" layoutX="1182.0" layoutY="356.0" promptText="Salary" />
+            <TextField fx:id="t8" layoutX="1182.0" layoutY="408.0" promptText="Address" />
+            <TextField fx:id="t9" layoutX="1182.0" layoutY="460.0" promptText="Contact no" />
+            <TextField fx:id="t11" layoutX="1182.0" layoutY="515.0" promptText="Job id" />
+            <TextField fx:id="t12" layoutX="1182.0" layoutY="573.0" promptText="Dept id" />
+            <TextField fx:id="t13" layoutX="1182.0" layoutY="631.0" promptText="Qualification" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

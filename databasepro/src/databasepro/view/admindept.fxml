@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.AdmindeptController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back" />
+                  <Button fx:id="addnewbutton" mnemonicParsing="false" onAction="#addnew" text="Add New" />
+                  <Button fx:id="updatebutton" mnemonicParsing="false" onAction="#update" text="Update" />
+                  <Button fx:id="deletebutton" mnemonicParsing="false" onAction="#delete" text="Delete" />
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search" />
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+              </items>
+            </ToolBar>
+            <SplitPane dividerPositions="0.29797979797979796" layoutY="40.0" prefHeight="743.0" prefWidth="1500.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="t1" layoutX="147.0" layoutY="101.0" promptText="Department id" />
+                        <TextField fx:id="t2" layoutX="147.0" layoutY="204.0" promptText="department name" />
+                        <TextField fx:id="t3" layoutX="147.0" layoutY="310.0" promptText="total number of patient" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="tabdept" onMouseClicked="#showonclick" prefHeight="742.0" prefWidth="1050.0">
+                          <columns>
+                            <TableColumn fx:id="c1" prefWidth="145.0" text="Department id" />
+                            <TableColumn fx:id="c2" prefWidth="189.0" text="Department tilte" />
+                              <TableColumn fx:id="c3" prefWidth="145.0" text="Total amount" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

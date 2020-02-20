@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.AdminController">
+   <top>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="1500.0">
+              <items>
+                  <Button fx:id="accountbutton" mnemonicParsing="false" onAction="#showaccount" text="Accountant">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="admissionbutton" mnemonicParsing="false" onAction="#showAdmission" text="Admission">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appbutton" mnemonicParsing="false" onAction="#showApp" text="Appointment">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deptbutton" mnemonicParsing="false" onAction="#showDept" text="Department">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="docbutton" mnemonicParsing="false" onAction="#showdoc" text="Doctor">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="drugbutton" mnemonicParsing="false" onAction="#showDrug" text="Drug">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="jobbutton" mnemonicParsing="false" onAction="#showJob" text="Job">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Nurse">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="patientbutton" mnemonicParsing="false" onAction="#showPat" text="Patient">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Pathologist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pharmabutton" mnemonicParsing="false" onAction="#showPharma" text="PharmaCompany">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="paybutton" mnemonicParsing="false" onAction="#showPay" text="Payment">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Receptionist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="roombutton" mnemonicParsing="false" onAction="#showRoom" text="Room">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="seatbutton" mnemonicParsing="false" onAction="#showSeat" text="Seat">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="testbutton" mnemonicParsing="false" onAction="#showTest" text="Test">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.AdminpatientController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar layoutY="6.0" prefHeight="35.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back" />
+                  <Button fx:id="addbutton" mnemonicParsing="false" onAction="#addnew" text="Add New" />
+                  <Button fx:id="updatebutton" mnemonicParsing="false" onAction="#update" text="Update" />
+                  <Button fx:id="deletebutton" mnemonicParsing="false" onAction="#delete" text="Delete" />
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="tab3" layoutY="41.0" onMouseClicked="#showonclick" prefHeight="739.0" prefWidth="807.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="140.0" text="p_id" />
+                <TableColumn fx:id="c2" prefWidth="225.0" text="p_firstname" />
+                  <TableColumn fx:id="c3" prefWidth="239.0" text="p_lastname" />
+                  <TableColumn fx:id="c4" prefWidth="203.0" text="p_gender" />
+              </columns>
+            </TableView>
+            <TextField fx:id="t1" layoutX="981.0" layoutY="96.0" />
+            <TextField fx:id="t2" layoutX="981.0" layoutY="153.0" />
+            <TextField fx:id="t3" layoutX="981.0" layoutY="214.0" />
+            <TextField fx:id="t4" layoutX="981.0" layoutY="275.0" />
+            <TextField fx:id="t5" layoutX="981.0" layoutY="329.0" />
+            <TextField fx:id="t6" layoutX="981.0" layoutY="390.0" />
+            <TextField fx:id="t7" layoutX="981.0" layoutY="442.0" />
+            <TextField fx:id="t8" layoutX="981.0" layoutY="492.0" />
+            <TextField fx:id="t9" layoutX="981.0" layoutY="553.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

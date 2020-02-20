@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.PatientpresController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log out">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="drugbutton" mnemonicParsing="false" onAction="#showdrug" text="Drug info">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="testbutton" mnemonicParsing="false" onAction="#showtest" text="Test info">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+              </items>
+            </ToolBar>
+            <TableView fx:id="tabpres" layoutY="40.0" onMouseClicked="#selectonclick" prefHeight="742.0" prefWidth="441.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="100.0" text="Prescription id" />
+                <TableColumn fx:id="c2" prefWidth="109.0" text="Prescription date" />
+                  <TableColumn fx:id="c3" prefWidth="131.0" text="Prescription comment" />
+                  <TableColumn fx:id="c5" prefWidth="100.0" text="Doctor id" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tabpresdrug" layoutX="441.0" layoutY="40.0" onMouseClicked="#showonclick" prefHeight="742.0" prefWidth="199.0">
+              <columns>
+                <TableColumn fx:id="C2" prefWidth="100.0" text="Drug Id" />
+                  <TableColumn fx:id="C3" prefWidth="100.0" text="Time of intake" />
+              </columns>
+            </TableView>
+            <TextField fx:id="t2" layoutX="676.0" layoutY="91.0" />
+            <TextField fx:id="t3" layoutX="676.0" layoutY="145.0" />
+            <TextField fx:id="t4" layoutX="676.0" layoutY="216.0" />
+            <TextField fx:id="t5" layoutX="676.0" layoutY="276.0" />
+            <TextField fx:id="t6" layoutX="676.0" layoutY="336.0" />
+            <TextField fx:id="t7" layoutX="676.0" layoutY="399.0" />
+            <Label fx:id="l1" layoutX="696.0" layoutY="40.0" text="Drug Information">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabprestest" layoutX="935.0" layoutY="40.0" onMouseClicked="#showonclicktest" prefHeight="740.0" prefWidth="151.0">
+              <columns>
+                <TableColumn fx:id="cl1" prefWidth="150.0" text="Test id" />
+              </columns>
+            </TableView>
+            <TextField fx:id="t8" layoutX="1192.0" layoutY="116.0" />
+            <TextField fx:id="t9" layoutX="1192.0" layoutY="204.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.AdminroomController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="30.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addnewbutton" mnemonicParsing="false" onAction="#addnew" text="Add New">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updatebutton" mnemonicParsing="false" onAction="#update" text="Update Info">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deletebutton" mnemonicParsing="false" onAction="#delete" text="Delete">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log Out">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+              </items>
+            </ToolBar>
+            <TableView fx:id="tabroom" layoutY="35.0" onMouseClicked="#showonclick" prefHeight="744.0" prefWidth="767.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="191.0" text="Room Id" />
+                <TableColumn fx:id="c2" prefWidth="195.0" text="Room capacity" />
+                  <TableColumn fx:id="c3" prefWidth="190.0" text="Floor" />
+                  <TableColumn fx:id="c4" prefWidth="190.0" text="Department Id" />
+              </columns>
+            </TableView>
+            <TextField fx:id="t1" layoutX="938.0" layoutY="100.0" promptText="Room Id" />
+            <TextField fx:id="t2" layoutX="938.0" layoutY="193.0" promptText="Room capacity" />
+            <TextField fx:id="t3" layoutX="938.0" layoutY="285.0" promptText="Floor" />
+            <TextField fx:id="t4" layoutX="938.0" layoutY="372.0" promptText="Department id" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

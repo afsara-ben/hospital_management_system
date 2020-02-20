@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.PatientController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="30.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="showprofile" mnemonicParsing="false" onAction="#showprofile" text="Show Profile">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editbutton" mnemonicParsing="false" onAction="#edit" text="Edit Profile">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log Out">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="billbutton" mnemonicParsing="false" onAction="#bill" text="Bill">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appbutton" mnemonicParsing="false" onAction="#appointment" text="Appointment">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="admissionbutton" mnemonicParsing="false" onAction="#admission" text="Admission">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="presbutton" mnemonicParsing="false" onAction="#prescription" text="Prescription">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="showdocbutton" mnemonicParsing="false" onAction="#doctor" text="Show Doctor">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+              </items>
+            </ToolBar>
+            <TextField fx:id="t1" layoutX="443.0" layoutY="71.0" promptText="Patient Id" />
+            <TextField fx:id="t2" layoutX="443.0" layoutY="129.0" promptText="First name" />
+            <TextField fx:id="t3" layoutX="443.0" layoutY="185.0" promptText="Last name" />
+            <TextField fx:id="t4" layoutX="443.0" layoutY="244.0" promptText="Gender" />
+            <TextField fx:id="t5" layoutX="443.0" layoutY="301.0" promptText="Date of Birth" />
+            <TextField fx:id="t6" layoutX="443.0" layoutY="357.0" promptText="Blood group" />
+            <TextField fx:id="t7" layoutX="443.0" layoutY="414.0" promptText="Address" />
+            <TextField fx:id="t8" layoutX="443.0" layoutY="469.0" promptText="Contact number" />
+            <TextField fx:id="t9" layoutX="443.0" layoutY="527.0" promptText="Email Id" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

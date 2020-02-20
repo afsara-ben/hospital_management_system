@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.RegistrationController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="518.0" layoutY="62.0" text="Registration">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="u1" layoutX="502.0" layoutY="170.0" promptText="User_ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="p1" layoutX="495.0" layoutY="272.0" promptText="password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <ComboBox fx:id="type1" layoutX="507.0" layoutY="378.0" prefWidth="150.0" />
+            <Button fx:id="signUpbutton" layoutX="548.0" layoutY="516.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backbutton" layoutX="891.0" layoutY="614.0" mnemonicParsing="false" onAction="#back" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="rb1" layoutX="750.0" layoutY="185.0" mnemonicParsing="false" onAction="#radiobutton" text="Admin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="mygrp" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb2" layoutX="750.0" layoutY="224.0" mnemonicParsing="false" onAction="#radiobutton" text="Accountant" toggleGroup="$mygrp" />
+            <RadioButton fx:id="rb3" layoutX="750.0" layoutY="264.0" mnemonicParsing="false" onAction="#radiobutton" text="Doctor" toggleGroup="$mygrp" />
+            <RadioButton fx:id="rb4" layoutX="750.0" layoutY="302.0" mnemonicParsing="false" onAction="#radiobutton" text="Nurse" toggleGroup="$mygrp" />
+            <RadioButton fx:id="rb5" layoutX="750.0" layoutY="342.0" mnemonicParsing="false" onAction="#radiobutton" text="Pathologist" toggleGroup="$mygrp" />
+            <RadioButton fx:id="rb6" layoutX="750.0" layoutY="382.0" mnemonicParsing="false" onAction="#radiobutton" text="Receptionist" toggleGroup="$mygrp" />
+            <RadioButton fx:id="rb7" layoutX="750.0" layoutY="422.0" mnemonicParsing="false" onAction="#radiobutton" text="Patient" toggleGroup="$mygrp" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

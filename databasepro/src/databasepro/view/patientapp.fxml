@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.PatientappController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="1500.0">
+              <items>
+                <Button fx:id="backbutton" mnemonicParsing="false" onAction="#back" text="Back">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutbutton" mnemonicParsing="false" onAction="#logout" text="Log out">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="searchbox" onInputMethodTextChanged="#search" onKeyReleased="#search" promptText="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+              </items>
+            </ToolBar>
+            <TableView fx:id="tabapp" layoutY="40.0" prefHeight="740.0" prefWidth="799.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="200.0" text="Appointment Id" />
+                <TableColumn fx:id="c2" prefWidth="200.0" text="Appointment date" />
+                  <TableColumn fx:id="c3" prefWidth="200.0" text="Appointment time" />
+                  <TableColumn fx:id="c5" prefWidth="200.0" text="Doctor Id" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

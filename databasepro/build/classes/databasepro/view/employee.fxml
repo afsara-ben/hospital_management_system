@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databasepro.view.EmployeeController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="nursebutton" layoutX="144.0" layoutY="106.0" mnemonicParsing="false" onAction="#gonurse" text="Nurse" />
+            <Button fx:id="accountantbutton" layoutX="129.0" layoutY="165.0" mnemonicParsing="false" onAction="#goaccountant" text="Accountant" />
+            <Button fx:id="reciptionistbutton" layoutX="129.0" layoutY="236.0" mnemonicParsing="false" onAction="#goreciptionist" text="Reciptionist" />
+            <Button fx:id="doctorbutton" layoutX="141.0" layoutY="47.0" mnemonicParsing="false" onAction="#godoctor" text="Doctor" />
+            <Button fx:id="pathologistbutton" layoutX="130.0" layoutY="306.0" mnemonicParsing="false" onAction="#gopathologist" text="Pathologist" />
+            <Button fx:id="backbutton" layoutX="431.0" layoutY="331.0" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
